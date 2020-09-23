@@ -70,13 +70,13 @@ namespace _22_09_20__student_list
             extract_string += "Name: " + name + "\nSurname: " + surname + "\nFather Name: " + fathername + "\nAge: " + age + "\nGroup: " + group + "\n";
             extract_string += "Programming marks: ";
             for (int i = 0; i < marks[0].Length; i++) extract_string += marks[0][i].ToString() + " ";
-            extract_string += "\t\t- Middle value: " + GetMiddleValue(0).ToString();
+            extract_string += "\t\t- Middle value: " + GetMiddleValue(0);
             extract_string += "\nAdministrating marks: ";
             for (int i = 0; i < marks[1].Length; i++) extract_string += marks[1][i].ToString() + " ";
-            extract_string += "\t- Middle value: " + GetMiddleValue(1).ToString();
+            extract_string += "\t- Middle value: " + GetMiddleValue(1);
             extract_string += "\nDesign marks: ";
             for (int i = 0; i < marks[2].Length; i++) extract_string += marks[2][i].ToString() + " ";
-            extract_string += "\t\t- Middle value: " + GetMiddleValue(2).ToString();
+            extract_string += "\t\t- Middle value: " + GetMiddleValue(2);
             extract_string += "\n------------------------------------------------------------------";
             return extract_string;
         }
