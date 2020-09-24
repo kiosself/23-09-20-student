@@ -41,18 +41,17 @@ namespace _22_09_20__student_list
             marks[2] = new int[t];
         }
         public void AddMark(int[] mark, int dest) {            
-            for (int i = 0; i < marks[dest].Length; i++) {
-                marks[dest][i] = mark[i];                
-            }           
+            for (int i = 0; i < marks[dest].Length; i++) marks[dest][i] = mark[i];                
         }       
         public string GetMiddleValue(int need_l) {
-            float middle_value = 0;
-            int sum_values = 0;
+            int count_values = 0;
+            float sum_values = 0;
+
             for (int i = 0; i < marks[need_l].Length; i++) {
-                middle_value += marks[need_l][i];
-                sum_values++;
+                sum_values += marks[need_l][i];
+                count_values++;
             }
-            return Math.Round(middle_value / sum_values, 1).ToString();
+            return Math.Round(sum_values / count_values, 1).ToString();
         }
         public string ShowInfo() {
             string extract_string = "";
