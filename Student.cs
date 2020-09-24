@@ -40,21 +40,11 @@ namespace _22_09_20__student_list
             marks[1] = new int[s];
             marks[2] = new int[t];
         }
-        public void AddFirstMark(int[] mark) {            
-            for (int i = 0; i < marks[0].Length; i++) {
-                marks[0][i] = mark[i];                
+        public void AddMark(int[] mark, int dest) {            
+            for (int i = 0; i < marks[dest].Length; i++) {
+                marks[dest][i] = mark[i];                
             }           
-        }
-        public void AddSecondMark(int[] mark) {            
-            for (int i = 0; i < marks[1].Length; i++) {
-                marks[1][i] = mark[i];               
-            }            
-        }
-        public void AddThirdMark(int[] mark) {            
-            for (int i = 0; i < marks[2].Length; i++) {
-                marks[2][i] = mark[i];                
-            }            
-        }
+        }       
         public string GetMiddleValue(int need_l) {
             float middle_value = 0;
             int sum_values = 0;
